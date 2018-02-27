@@ -5,8 +5,8 @@
         <meta charset="utf-8" />
         <title> FindThePrecious.com </title>
 	
-	<!-- link to the CSS file -->
-	<link rel="stylesheet" type="css/txt" href="style.css">
+	<!-- JQuery link 3.3.1 -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 
 	<!-- link to the Bootstrap file -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -14,219 +14,326 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+	<!-- link to the CSS file -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
     </head>
     <body>
-        <!-- Title of the website -->
-        <header>
-            <h1> FindThePrecious.com</h1>
-        </header>
+	<div class="container">
+	    <!-- Navbar -->
+	    <nav class="navbar navbar-default navbar-static-top">
+		<!-- Website's title -->
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">
+				<img alt="Brand" src="ressources/_logo.png">
+			</a>
+		</div>
 
-        <!-- Main menu of the website -->
-        <nav>
-            <ul>
-                <li> <a href="#fellows">Fellow </a></li>
-                <li> <a href="#about_ring">The Ring </a></li>
-                <li> <a href="#reward">Get my reward </a></li>
-                <li> <a href="#best_hunters">Best hunters </a></li>
-                <li> <a href="#join_army">Join the army </a></li>
-                <li> <a href="#contact_us">Contact us </a></li>
-            </ul>
-        </nav>
+		<!-- menu of the website -->
+		<div class="collapse navbar-collapse menu">
+            		<ul class="nav navbar-nav">
+                		<li class="active"> <a href="#fellows">Fellow </a></li>
+	                	<li> <a href="#about_ring">The Ring </a></li>
+        	        	<li> <a href="#reward">Get my reward </a></li>
+                		<li> <a href="#best_hunters">Best hunters </a></li>
+                		<li> <a href="#join_army">Join the army </a></li>
+                		<li> <a href="#contact_us">Contact us </a></li>
+            		</ul>
+		</div>
+	    </nav>
 
-        <!-- Banner -->
-        <div id="banner">
-            <figure>
-                <img src="ressources/_dark_vador.jpg" alt="banner" />
-            </figure>
+	    <!-- Carousel -->
+	    <div id="banner" class="carousel slide" data-ride="carousel">
+	    <div class="carousel-inner" role="listbox">
+		<div class="item active">
+			<img src="ressources/_dark_vador.jpg" alt="banner" />
+			<div class="carousel-caption">
+			</div>
+		</div>
 
-            <!-- text for the banner -->
-            <p>
-                <b> Dangerous fellowship try to destroy the ring </b><br />
-                Orcs, Goblins, Balrogs, protect your Master Sauron !
-            </p>
-        </div>
+		<div class="item">
+			<img src="ressources/_witch.jpg" alt="banner" />
+			<div class="carousel-caption">
+				<h3>Sauron is a very good bro,</h3>
+				<p>Please help him to find his ring!</p>
+				<p> d.v.</p>
+			</div>
+		</div>
 
+		<div class="item">
+			<img src="ressources/_dark_vador.jpg" alt="banner" />
+			<div class="carousel-caption">
+			</div>
+		</div>
+
+		<!-- Controls of the carousel -->
+
+		<a class="left carousel-control" href="#banner" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+
+		<a class="right carousel-control" href="#banner" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+	    </div>
+			
         <!-- Section fellows -->
         <section id="fellows">
             <h2> Fellows wanted dead </h2>
             <p> (or alive if you want to eat them later) </p>
 
             <!-- select of the wanted -->
-            <button type="button" name="wanted"> Most wanted </button>
-            <button type="button" name="dangerous"> Most dangerous </button>
-            <button type="button" name="captured"> Already captured </button>
+	    <ul class="nav nav-pills">
+		    <li role="presentation"><a href="#"> Most wanted </a></li>
+		    <li role="presentation" class="active"><a href="#"> Most dangerous</a></li>
+		    <li role="presentation"><a href="#"> Already captured </a></li>
+	    </ul>
             
-            <article>
-                <figure>
-                    <img src="ressources/_gandalf.png" alt="portrait of Gandalf" />
-                    <figcaption> Reward <span>1000</span> gold coins </figcaption>
-                </figure>
+	    <!-- Thumbnails of Gandalf, Aragorn and Gimli -->
+	    <div class="row">
 
-                <h2> The Wizard </h2>
-                <p> A very dangerous wizard, balrog killer... </p>
-            </article>
+		    <!-- GANDALF -->
+		    <div class="col-xs-4">
+			    <div class="thumbnail">
+                    		<img src="ressources/_gandalf.png" alt="portrait of Gandalf" class="img-responsive" />
+				<figcaption> Reward <span>1000</span> gold coins </figcaption>
+				<div class="caption">
+					<h3> The Wizard </h3>
+					<p> A very dangerous wizard, balrog killer... </p>
+				</div>
+			    </div>
+		    </div>
 
-            <article>
-                <figure>
-                    <img src="ressources/_aragorn.png" alt="portrait of Aragorn" />
-                    <figcaption> Reward <span>800</span> gold coins</figcaption>
-                </figure>
+		    <!-- ARAGORN -->
+                     <div class="col-xs-4">
+			    <div class="thumbnail">
+                    		<img src="ressources/_aragorn.png" alt="portrait of Aragorn" class="img-responsive" />
+				<figcaption> Reward <span>800</span> gold coins </figcaption>
+				<div class="caption">
+					<h3> Aragorn</h3>
+					<p>  Sauron's finger says him his sword is dangerous...</p>
+				</div>
+			    </div>
+		    </div>
 
-                <h2> Aragorn </h2>
-                <p> Sauron's finger says him his sword is dangerous...</p>
-            </article>
-
-
-            <article>
-                <figure>
-                    <img src="ressources/_gimli.png" alt="portrait of Gimli"/>
-                    <figcaption> dead </figcaption>
-                </figure>
-
-                <h2> Gimli </h2>
-                <p> a dwarf, with a beard and an axe... </p>
-            </article>
-
+		    <!-- GIMLI -->
+                     <div class="col-xs-4">
+			    <div class="thumbnail">
+                    		<img src="ressources/_gimli.png" alt="portrait of Gimli" class="img-responsive"/>
+				<figcaption> dead </figcaption>
+				<div class="caption">
+					<h3> Gimli </h3>
+					<p> a dwarf, with a beard and an axe... </p>
+				</div>
+			    </div>
+		    </div>
+		</div>
 
         </section>
 
         <section id="reward">
             <h2> I have captured one of them, how to get my reward ? </h2>
-            <p>
-            <span lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
-            </p>
-            <img src="ressources/_coin_sauron.png" alt="reward" />
-            <button name="contact" type="button"> Contact us </button>
+	    <div class="row">
+		    <div class="col-xs-9">
+			    <p>
+			    	<span lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+				</p>
+		    </div>
+		    <div class="col-xs-3">
+			    <img src="ressources/_coin_sauron.png" alt="reward" />
+		    </div>
+	    </div>
+	    
+	    <div class="row">
+		    <button name="contact" type="button"> Contact us </button>
+	    </div>
         </section>
 
         <section id="best_hunters">
             <h2> Our best hunters </h2>
 
-            <!-- ElvesKiller22 profil and score -->
-            <figure>
-                <img src="ressources/_hunter1.png" alt="elvesKiller22's portrait">
-            </figure>
-            <h3> ElvesKiller22 </h3>
-            <p> 2 captures - <a href="">Profile</a> <br />
-            <a href=""> button like </a></p>
+	    <div class="row">
+		    <div class="col-xs-6">
+			<!-- ElvesKiller22 profil and score -->
+			<div class="media">
+				<div class="media-left">
+					<img class="media-object" src="ressources/_hunter1.png" alt="elvesKiller22's portrait">
+				</div>
+				<div class="media-body">
+					<h3 class="media-heading"> ElvesKiller22 </h3>
+            				<p> 2 captures - <a href="">Profile</a> <br />
+            				<a href=""> button like </a></p>
+				</div>
+			</div>
+		    </div>
 
-
-            <!-- Goblin45 profil and score -->
-            <figure>
-                <img src="ressources/_hunter2.png" alt="Goblin's portrait">
-            </figure>
-            <h3> Goblin45 </h3>
-            <p> 1 capture - <a href="">Profile</a> <br />
-            <a href=""> button like </a></p>
+		    <div class="col-xs-6">
+            		<!-- Goblin45 profil and score -->
+			<div class="media">
+				<div class="media-left">
+					<img class="media-objetct" src="ressources/_hunter2.png" alt="Goblin's portrait">
+				</div>
+				<div class="media-body">
+					<h3> Goblin45 </h3>
+            				<p> 1 capture - <a href="">Profile</a> <br />
+            				<a href=""> button like </a></p>
+				</div>
+			</div>
+		    </div>
+	    </div>
         </section>
 
         <!-- Section about the ring -->
         <section id="about_ring">
             <h2> About the ring </h2>
-            <h3> Ring Capabilities </h3>
-            <p>
-                What can our master Sauron do with the ring ?
-            </p>
-            <table>
-                   <thead>
-                       <tr>
-                            <th> Feature </th>
-                            <th> Description </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td> Main </td>
-                            <td> One ring to rules them all </td>
-                        </tr>
-                        <tr>
-                            <td> Invisibility </td>
-                            <td> You can't see me </td>
-                        </tr>
-                        <tr>
-                            <td> Power </td>
-                            <td> Destroy the world </td>
-                        </tr>
-                    </tbody>
-            </table>
 
-            <h3> Why the ring is awesome ? </h3>
-            <q>
-                My preciooooooousssss! Hrk, Hrk, we want our preeciooouuusssss !!
-                <cite> Gollum </cite>
-            </q>
-            <figure>
-                <img src="ressources/_gollum.png" alt="gollum" />
-            </figure>
+	    <!-- Capacity of the Ring -->
+	    <div class="row">
+		    <div class="col-xs-12 panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title"> Ring Capabilities</h3>
+			</div>
+
+			<p> What can our master Sauron do with the ring ? </p>
+            		<table class="table-responsive table-striped">
+                   		<thead>
+                       			<tr>
+                            			<th> Feature </th>
+                            			<th> Description </th>
+                        		</tr>
+                    		</thead>
+                    		<tbody>
+                        		<tr>
+                            			<td> Main </td>
+                            			<td> One ring to rules them all </td>
+				       	</tr>
+                        		<tr>
+					       <td> Invisibility </td>
+					       <td> You can't see me</td>
+					</tr>
+                        		<tr>
+                            			<td> Power </td>
+                            			<td> Destroy the world </td>
+                        		</tr>
+                    		</tbody>
+            		</table>
+		    </div>
+	    </div>
+
+
+	    <!-- Gollum citation -->
+	    <div class="row">
+		    <div class="col-xs-12 panel panel-default">
+			    <div class="panel-heading">
+				    <h3 class="panel-title"> Why the Ring is awesome ? </h3>
+			    </div>
+			    <q>
+				My preciooooooousssss! Hrk, Hrk, we want our preeciooouuusssss !!
+                		<cite> Gollum </cite>
+			    </q>
+			    <img src="ressources/_gollum.png" alt="gollum" class="img-responsive img-circle"/>
+		    </div>
+	    </div>
         </section>
 
         <!-- Army -->
         <section id="join_army">
                 <h2> Join Mordor Army, we need you ! </h2>
             <!-- image of the army -->
-            <figure>
-                <img src="ressources/_army.png" alt="Army of Sauron"/>
-            </figure>
+	    	<div class="row">
+			<div class="col-xs-9">
+            			<p>
+            			<span lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
+            			</p>
+			</div>
+			<div class="col-xs-3">
+           			 <figure>
+                			<img src="ressources/_army.png" alt="Army of Sauron" class="img-responsive"/>
+            			</figure>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-3">
+				<figure>
+                			<img src="ressources/_weneedyou-1.png" alt="Sauron need you" class="img-responsive"/>
+            			</figure>
+			</div>
 
-            <p>
-            <span lang="zxx">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</span>
-            </p>
-
-            <figure>
-                <img src="ressources/_weneedyou-1.png" alt="Sauron need you"/>
-            </figure>
-
-            <!-- Link to SauronRulesThemAll.com -->
-            <button name="join" type="button"> More info on SauronRulesThemAll.com </button>
+			<div class="col-xs-9">
+            			<!-- Link to SauronRulesThemAll.com -->
+				<p> More info on <br /> </p>
+            			<button name="join" type="button"> SauronRulesThemAll.com </button>
+			</div>
+		</div>
         </section>
 
         <!-- Contact us section -->
         <section id="contact_us">
                 <h2> Contact us </h2>
+		<div class="row">
 
-            <form id="contact_form">
-                <label for="mail">Mail</label>
-                <input type="text" placeholder="@" name="mail" id="mail" required/>
-                <br />
+			<div class="col-xs-6">
+       		     		<form id="contact_form" class="form-horizontal">
+					<div class="form-group">
+                				<input type="text" class="form-control" placeholder="@" name="mail" id="mail" required/>
+					</div>
                 
-                <label for="home">Home</label>
-                <input type="text" name="home" id="home" placeholder="address" required/>
-                <br />
+					<div class="form-group">
+                				<input type="text" class="form-control" name="home" id="home" placeholder="address" required/>
+					</div>
 
-                <!-- Select subject of the mail-->
-                <label for="subject">Subject</label>
-                <select name="subject" id="subject">
-                    <option selected>I have seen one of them</option>
-                    <option>I have captured one of them</option>
-                    <option>I want to join your army</option>
-                </select>
-                <br />
+					<div class="form-group">
+                				<!-- Select subject of the mail-->
+                				<select class="form-control" name="subject" id="subject">
+                    					<option selected>I have seen one of them</option>
+                    					<option>I have captured one of them</option>
+                    					<option>I want to join your army</option>
+                					</select>
+					</div>
                 
-                <label for="message"> Main message </label>
-                <textarea id="message" name="message"> Your message to the Master </textarea>
-            </form>
-
-            <img src="ressources/_map.png" alt="Map of the Mordor country" />
+					<div class="form-group">
+                				<textarea class="form-control" id="message" name="message"> Your message to the Master </textarea>
+					</div>
+            			</form>
+			</div>
+			<div class="col-xs-6">
+				<img src="ressources/_map.png" alt="Map of the Mordor country" class="img-responsive" />
+			</div>
+		</div>
         </section>
 
         <footer>
-            <ul>
-                <!-- sections inside the page of the website -->
-                <li> <a href="#about_us">About us</a> </li>
-                <li> <a href="#fellows">Fellows</a> </li>
-                <li> <a href="#join_army">Join our army </a></li>
-                <li> <a href="#about_ring">FAQ</a> </li>
-                <li> <a href="#reward">Reward conditions</a> </li>
-                <li> <a href="">Legal mentions</a> </li>
-            </ul>
+		<div class="container">
+			<div class="rows">
+				<div class="col-xs-4">
+					<ul>
+						<li><a href="#about_us">About us</a></li>
+						<li><a href="#fellows">Fellows</a></li>
+						<li><a href="#join_army">Join our army </a></li>
+					</ul>
+				</div>
 
-            <ul>
-                <!-- Externe links -->
-                <li> <a href="http://Sauron4Ever.com">Sauron4Ever.com</a> </li>
-                <li> <a href="http://twitter.com/Sauron">Follow him also on twitter</a> </li>
-            </ul>
+				<div class="col-xs-4">
+					<ul>
+						<li><a href="#Faq">FAQ</a></li>
+						<li><a href="#reward_conditions">Reward conditions</a></li>
+						<li><a href="#legal_mentions">Legal mentions</a></li>
+					</ul>
+				</div>
 
+				<div class="col-xs-4">
+					<ul>
+						<li><a href="http://sauron4ever.com">SAURON4EVER.COM</a></li>
+						<li><a href="http://twitter.com/Sauron">Follow him also on twitter</a></li>
+						<li><a href="http://findtheprecious.com">FindThePrecious</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
         </footer>
 
+	</div>
     </body>
 </html>

@@ -1,0 +1,22 @@
+.nav .menu
+{
+	background-color : #FF520A;
+}
+#contact_us, #reward, .thumbnail
+{
+	background-color : #000000;
+}
+
+/** round border for form controler **/
+.form-control
+{
+	border-radius: 5px;
+}
+
+/** Footer **/
+footer
+{
+	background-color : #FF520A;
+	color : white;
+}
+

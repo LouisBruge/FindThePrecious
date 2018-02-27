@@ -1,22 +1,69 @@
-.nav .menu
-{
-	background-color : #FF520A;
-}
-#contact_us, #reward, .thumbnail
-{
-	background-color : #000000;
+/** Fonts **/
+@font-face {
+    font-family: partybusiness;
+    src: url(ressources/partybusiness/partybusiness.ttf);
 }
 
-/** round border for form controler **/
-.form-control
-{
-	border-radius: 5px;
+@font-face {
+    font-family : aniron;
+    src: url("ressources/pete-klassen_aniron/anicb___.ttf");
 }
 
-/** Footer **/
-footer
-{
-	background-color : #FF520A;
-	color : white;
+ * {
+    font-family: aniron;
+}
+
+
+/** background and font colors **/
+.navbar, footer {
+    background-color : #F7530D;
+}
+
+.navbar a, footer a {
+    color : white;
+}
+
+#reward, #about_ring, #contact_us {
+    background-image: url("ressources/_bg_dark.png");
+    background-repeat: repeat;
+}
+
+#reward h2, #about_ring h2, #contact_us h2 {
+    color: white;
+}
+
+#fellows, #best_hunters {
+    background-image: url("ressources/_bg_light.png");
+    background-repeat: repeat;
+}
+
+/** specific colors **/
+.panel-heading {
+    background-color: #F7530D;
+    color : white;
+}
+
+/** button **/
+.btn {
+    box-shadow: 2px 2px 3px;
+    box-radius: 0px;
+}
+
+/** center the wanted select pill **/
+#wanted-select {
+    margin : auto;
+}
+
+/** thumbnail of Gandalf, Aragon and gimli **/
+.thumbnail {
+    background-color: #000000;
+}
+
+.thumbnail img {
+    opacity: 0.7;
+}
+
+.thumbnail:hover img {
+    opacity: 1;
 }
 

@@ -1,92 +1,200 @@
-/** Fonts **/
+/**
+ *
+ * 	 Fonts
+ *
+ *
+ **/
 @font-face {
-    font-family: partybusiness;
-    src: url(ressources/partybusiness/partybusiness.ttf);
+    	font-family: partybusiness;
+    	src: url(ressources/partybusiness/partybusiness.ttf);
 }
 
 @font-face {
-    font-family : aniron;
-    src: url("ressources/pete-klassen_aniron/anicb___.ttf");
+	font-family : aniron;
+    	src: url("ressources/pete-klassen_aniron/anirm___.ttf");
 }
+
+@font-face {
+	font-family: symbol;
+	src: url("ressources/tengwar/tnganbi.ttf");
+}
+
+/**
+ *
+ * 	Main params
+ *
+ **/
 
  * {
-    font-family: aniron;
+    	font-family: partybusiness;
+    	max-width: 1920px;
+    	margin: auto;
 }
 
+h2 {
+	margin: 0;
+	padding: 2% 0 2% 2%;
+	font-family: aniron;
+}
+
+h2::before, h2::after {
+	content: "ij";
+	color: #F7530D;
+	font-family: symbol;
+	top: 2%;
+}
+
+.navbar, footer {
+	background-color : #F7530D;
+}
+
+/**
+ *
+ * 	Main navbar
+ *
+ **/
 
 /** background and font colors **/
-.navbar, footer {
-    background-color : #F7530D;
-}
-
-li a, footer a {
-    color : white;
-}
-
 #reward, #about_ring, #contact_us {
-    background-image: url("ressources/_bg_dark.png");
-    background-repeat: repeat;
+    	background-image: url("ressources/_bg_dark.png");
+    	background-repeat: repeat;
 }
 
 #reward h2, #about_ring h2, #contact_us h2 {
-    color: white;
+    	color: white;
 }
 
 #fellows, #best_hunters {
-    background-image: url("ressources/_bg_light.png");
-    background-repeat: repeat;
+    	background-image: url("ressources/_bg_light.png");
+    	background-repeat: repeat;
 }
 
 /** specific colors **/
 .panel-heading {
-    background-color: #F7530D;
-    color : white;
+    	background-color: #F7530D;
+    	color : white;
 }
 
 .orange {
-    color: #F7530D;
+    	color: #F7530D;
 }
 
 h2 small {
-    color: black;
+    	color: black;
 }
 
 /** color and weight of the horizontale rule **/
 hr {
-    background-color: #F7530D;
-    color: #F7530D;
-    height: 3px;
-    width: 50%;
-    margin:  0 auto;
-    padding: 0;
+    	background-color: #F7530D;
+    	color: #F7530D;
+    	height: 3px;
+    	width: 50%;
+    	margin:  0 auto;
+    	padding: 0;
 }
 
 /** button **/
 .btn {
-    box-shadow: 2px 2px 3px;
-    box-radius: 0px;
+    	box-shadow: 2px 2px 3px;
+    	box-radius: 0px;
 }
 
 /** remove margin and border from navbar **/
 .navbar {
-    margin: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 5px 5px;
     border: 0;
-    padding-bottom: 5px;
 }
 
 /** remove padding from container-fluid **/
 .container-fluid {
     padding: 0;
+
 }
 
 .item img {
     margin: 0;
 }
 
+/**
+ *
+ * 	Navbar
+ *
+ **/
+
+/** modified button of the navbar **/
+#menu .active a {
+	background: none;
+	text-decoration: underline;
+}
+
+#menu li a {
+	color: white;
+}
+
+#menu .navbar-text {
+	color: white;
+}
+/**
+ *
+ *
+ * 	Carousel
+ *
+ **/
+
+.carousel-caption {
+	display: relative;
+	top: 50%;
+}
+.carousel-caption h3, .carousel-caption p {
+    	font-family: partybusiness;
+}
+
+.carousel-caption h3 {
+	font-size: 6em;
+}
+
+.carousel-caption p {
+	font-size: 4em;
+}
+
+.initiales {
+	text-align: right;
+}
+
+.initiales::before {
+	content: " - ";
+}
+/**
+ *
+ * 	Fellows Section
+ *
+ **/
+
 /** center the wanted select pill **/
 #wanted-select {
-    margin : auto;
+	background-color: none;
+	width: 100%;
 }
+
+ul#wanted-select li a {
+	color: grey;
+}
+
+/** modified button of the wanted list **/
+#wanted-select .active a {
+	background: none;
+	border-bottom: 3px solid #F7530D;
+	color : #F7530D;
+	border-radius: none;
+}
+
+#wanted-select .active a::before, #wanted-select .active a::after {
+	content: " w ";
+	color: #F7530D;
+	font-family: partybusiness;
+}
+
 
 /** thumbnail of Gandalf, Aragon and gimli **/
 .thumbnail {
@@ -102,48 +210,80 @@ hr {
     opacity: 1;
 }
 
+/** set the name of the wanted man **/
 .thumbnail h3 {
     position: absolute;
     text-align: center;
-
-    display: block;
+    width: 100%;
 
     color: white;
 
-    bottom: 40%;
-    left: 25%;
-}
-
-.alive {
-    color : black;
-
-    text-align: center;
-
-    background-color: white;
-    border-radius: 5px;
-    opacity: 0.7;
-    box-shadow: inset 4px;
-}
-
-.thumbnail figcaption {
-    position: absolute;
-    display: block-inline;
-    padding: 5%;
-    margin: auto;
-
-    top: 10%;
-    left: 15%
-}
-
-.thumbnail figcaption p {
-    opacity: 1;
-}
-
-.thumbnail:hover figcaption {
-    display: none;
+    top: 50%;
+    left: 0px;
 }
 
 .thumbnail:hover h3 {
-    bottom: 20%;
+	
+	transform: translate(0, 350%);
 }
+
+/** set the position of the wanted man's legende **/
+.alive {
+    color : black;
+    text-align: center;
+    border-shadow: 5px 5px 5px 5px white inset;
+    background-color: white;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.thumbnail .legende{
+    position: absolute;
+    display: block-inline;
+    padding: 0 5%;
+    top: 10%;
+    left: 40%;
+
+    text-align: center;
+}
+
+.thumbnail .legende p {
+    opacity: 1;
+}
+
+.thumbnail:hover .legende{
+    display: none;
+}
+
+/** set the caption of the wanted man **/ 
+.thumbnail .caption p {
+	color: white;
+	text-align: justify;
+}
+
+/**
+ *
+ * 	Reward
+ *
+ **/
+#reward h2, #reward p {
+	color: white;
+}
+
+#reward p {
+	text-align: justify;
+	padding: 2%;
+}
+
+/**
+ *
+ *
+ *	Best Hunters
+ *
+ *
+ **/
+footer a {
+    	color : white;
+}
+
 

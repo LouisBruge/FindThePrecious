@@ -59,7 +59,7 @@ h2::before, h2::after {
 
 /** background and font colors **/
 #reward, #about_ring, #contact_us {
-    	background-image: url("assets/_bg_dark.png");
+    	background-image: url("assets/bg_dark.png");
     	background-repeat: repeat;
 }
 
@@ -68,7 +68,7 @@ h2::before, h2::after {
 }
 
 #fellows, #best_hunters {
-    	background-image: url("assets/_bg_light.png");
+    	background-image: url("assets/bg_light.png");
     	background-repeat: repeat;
 }
 

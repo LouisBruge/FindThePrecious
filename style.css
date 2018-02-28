@@ -4,19 +4,20 @@
  *
  *
  **/
+
 @font-face {
-    	font-family: partybusiness;
-    	src: url(assets/partybusiness/partybusiness.ttf);
+  font-family: partybusiness;
+  src: url(assets/partybusiness/partybusiness.ttf);
 }
 
 @font-face {
-	font-family : aniron;
-    	src: url("assets/pete-klassen_aniron/anirm___.ttf");
+  font-family: aniron;
+  src: url("assets/pete-klassen_aniron/anirm___.ttf");
 }
 
 @font-face {
-	font-family: symbol;
-	src: url("assets/tengwar/tnganbi.ttf");
+  font-family: symbol;
+  src: url("assets/tengwar/tnganbi.ttf");
 }
 
 /**
@@ -25,83 +26,85 @@
  *
  **/
 
- * {
-    	font-family: partybusiness;
-	font-size: 3vmin;
-    	max-width: 1920px;
-    	margin: auto;
+* {
+  font-family: partybusiness;
+  font-size: 3vmin;
+  max-width: 1920px;
+  margin: auto;
 }
 
-
 h2 {
-	margin: 0;
-	padding: 2% 0 2% 2%;
-	font-family: aniron;
-	font-size: 3vmin;
+  margin: 0;
+  padding: 2% 0 2% 2%;
+  font-family: aniron;
+  font-size: 3vmin;
 }
 
 h3 {
-	margin: 0;
-	font-family: aniron;
-	font-size: 1vw;
+  margin: 0;
+  font-family: aniron;
+  font-size: 1vw;
 }
 
 h2::before, h2::after {
-	content: "ij";
-	color: #F7530D;
-	font-family: symbol;
-	top: 2%;
+  content: "ij";
+  color: #F7530D;
+  font-family: symbol;
+  top: 2%;
 }
 
 .navbar, footer {
-	background-color : #F7530D;
+  background-color: #F7530D;
 }
 
 /** background and font colors **/
+
 #reward, #about_ring, #contact_us {
-    	background-image: url("assets/bg_dark.png");
-    	background-repeat: repeat;
+  background-image: url("assets/bg_dark.png");
+  background-repeat: repeat;
 }
 
 #reward h2, #about_ring h2, #contact_us h2 {
-    	color: white;
+  color: white;
 }
 
 #fellows, #best_hunters {
-    	background-image: url("assets/bg_light.png");
-    	background-repeat: repeat;
+  background-image: url("assets/bg_light.png");
+  background-repeat: repeat;
 }
 
 /** specific colors **/
+
 .panel-heading {
-    	background-color: #F7530D;
-    	color : white;
+  background-color: #F7530D;
+  color: white;
 }
 
 .orange {
-    	color: #F7530D;
+  color: #F7530D;
 }
 
 h2 small {
-    	color: black;
+  color: black;
 }
 
 /** color and weight of the horizontale rule **/
+
 hr {
-    	background-color: #F7530D;
-    	color: #F7530D;
-    	height: 0.2vw;
-    	width: 50%;
-    	margin:  0 auto;
-    	padding: 0;
+  background-color: #F7530D;
+  color: #F7530D;
+  height: 0.2vw;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 /** button **/
-.btn {
-    	box-shadow: 2px 2px 3px;
-    	box-radius: 0px;
-}
 
+.btn {
+  box-shadow: 2px 2px 3px;
+  box-radius: 0px;
+}
 
 /**
  *
@@ -110,29 +113,31 @@ hr {
  **/
 
 /** remove margin and border from navbar **/
+
 .navbar {
-    	margin: 0 0 0 0;
-    	padding: 0 0 5px 5px;
-    	border: 0;
+  margin: 0 0 0 0;
+  padding: 0 0 5px 5px;
+  border: 0;
 }
 
 /** modified button of the navbar **/
+
 #menu .active a {
-	background: none;
-	text-decoration: underline;
+  background: none;
+  text-decoration: underline;
 }
 
 #menu .navbar-text, #menu li a {
-	color: white;
-	font-family: aniron;
-	font-size: 1vw;
+  color: white;
+  font-family: aniron;
+  font-size: 1vw;
 }
 
 /** remove padding from container-fluid **/
-.container-fluid {
-    	padding: 0;
-}
 
+.container-fluid {
+  padding: 0;
+}
 
 /**
  *
@@ -141,32 +146,32 @@ hr {
  **/
 
 .item img {
-    	margin: 0;
+  margin: 0;
 }
-
 
 .carousel-caption {
-	display: relative;
-	top: 50%;
+  display: relative;
+  top: 50%;
 }
+
 .carousel-caption h3, .carousel-caption p {
-    	font-family: partybusiness;
+  font-family: partybusiness;
 }
 
 .carousel-caption h3 {
-	font-size: 4vw;
+  font-size: 4vw;
 }
 
 .carousel-caption p {
-	font-size: 3vw;
+  font-size: 3vw;
 }
 
 .initiales {
-	text-align: right;
+  text-align: right;
 }
 
 .initiales::before {
-	content: " - ";
+  content: " - ";
 }
 
 /**
@@ -176,110 +181,111 @@ hr {
  **/
 
 /** center the wanted select pill **/
+
 .nav-center {
-	text-align: center;
+  text-align: center;
 }
 
 .nav-center ul.nav {
-	display: inline-block;
+  display: inline-block;
 }
 
 .nav-center ul.nav li {
-	display: inline;
+  display: inline;
 }
 
 .nav-center ul.nav li a {
-	float: left;
+  float: left;
 }
 
 ul#wanted-select li a {
-	color: grey;
+  color: grey;
 }
 
 /** modified button of the wanted list **/
+
 #wanted-select .active a {
-	background: none;
-	color : #F7530D;
-	border-radius: none;
-	text-decoration: underline;
+  background: none;
+  color: #F7530D;
+  border-radius: none;
+  text-decoration: underline;
 }
 
 #wanted-select .active a::before, #wanted-select .active a::after {
-	content: " w ";
-	color: #F7530D;
-	font-family: partybusiness;
+  content: " w ";
+  color: #F7530D;
+  font-family: partybusiness;
 }
 
-
 /** thumbnail of Gandalf, Aragon and gimli **/
+
 .thumbnail {
-    	background-color: #000000;
-    	position: relative;
+  background-color: #000000;
+  position: relative;
 }
 
 .thumbnail img {
-    	opacity: 0.7;
+  opacity: 0.7;
 }
 
 .thumbnail:hover img {
-    	opacity: 1;
+  opacity: 1;
 }
 
 /** set the position of the wanted man's legende **/
+
 .image {
-	position: relative;
+  position: relative;
 }
 
-.image .legende{
-    	position: absolute;
-    	width: 70%;
-    	top: 15%;
-	margin: 0 15%;
-	font-size: 3vmin;
+.image .legende {
+  position: absolute;
+  width: 70%;
+  top: 15%;
+  margin: 0 15%;
+  font-size: 3vmin;
 }
 
 .alive {
-    	color : black;
-    	background-color: white;
-    	border-radius: 5px;
-    	opacity: 0.5;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0.5;
 }
 
 /** set the name of the wanted man **/
+
 .thumbnail .name {
-    	position: absolute;
-    	text-align: center;
-    	width: 100%;
-
-    	color: white;
-
-    	top: 50%;
-    	left: 0px;
-    	font-size: 5vmin;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: white;
+  top: 50%;
+  left: 0px;
+  font-size: 5vmin;
 }
 
 .thumbnail:hover .name {
-	font-size: 2vmin;
-	transform: translate(0, 7vw);
-
+  font-size: 2vmin;
+  transform: translate(0, 7vw);
 }
 
 #dead_man {
-	font-size: 6vmin;
+  font-size: 6vmin;
 }
-
 
 .thumbnail .legende p {
-    	opacity: 1;
+  opacity: 1;
 }
 
-.thumbnail:hover .legende{
-    	display: none;
+.thumbnail:hover .legende {
+  display: none;
 }
 
-/** set the caption of the wanted man **/ 
+/** set the caption of the wanted man **/
+
 .thumbnail .caption p {
-	color: white;
+  color: white;
 }
 
 /**
@@ -287,13 +293,14 @@ ul#wanted-select li a {
  * 	Reward
  *
  **/
+
 #reward h2, #reward p {
-	color: white;
+  color: white;
 }
 
 #reward p {
-	text-align: justify;
-	padding: 2%;
+  text-align: justify;
+  padding: 2%;
 }
 
 /**
@@ -303,8 +310,7 @@ ul#wanted-select li a {
  *
  *
  **/
+
 footer a {
-    	color : white;
+  color: white;
 }
-
-

@@ -6,17 +6,17 @@
  **/
 @font-face {
     	font-family: partybusiness;
-    	src: url(ressources/partybusiness/partybusiness.ttf);
+    	src: url(assets/partybusiness/partybusiness.ttf);
 }
 
 @font-face {
 	font-family : aniron;
-    	src: url("ressources/pete-klassen_aniron/anirm___.ttf");
+    	src: url("assets/pete-klassen_aniron/anirm___.ttf");
 }
 
 @font-face {
 	font-family: symbol;
-	src: url("ressources/tengwar/tnganbi.ttf");
+	src: url("assets/tengwar/tnganbi.ttf");
 }
 
 /**
@@ -59,7 +59,7 @@ h2::before, h2::after {
 
 /** background and font colors **/
 #reward, #about_ring, #contact_us {
-    	background-image: url("ressources/_bg_dark.png");
+    	background-image: url("assets/_bg_dark.png");
     	background-repeat: repeat;
 }
 
@@ -68,7 +68,7 @@ h2::before, h2::after {
 }
 
 #fellows, #best_hunters {
-    	background-image: url("ressources/_bg_light.png");
+    	background-image: url("assets/_bg_light.png");
     	background-repeat: repeat;
 }
 

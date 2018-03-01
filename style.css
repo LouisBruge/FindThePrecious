@@ -238,6 +238,8 @@ ul#wanted-select li a {
 
 .thumbnail img {
   opacity: 0.7;
+  width-max: 372px ;
+  height-max: 326px;
 }
 
 .thumbnail:hover img {
@@ -252,9 +254,10 @@ ul#wanted-select li a {
 
 .image .legende {
   position: absolute;
-  width: 70%;
+  width: 20vmin;
+
   top: 15%;
-  margin: 0 15%;
+  margin: 0 25%;
   font-size: 3vmin;
 }
 
@@ -280,7 +283,7 @@ ul#wanted-select li a {
 
 .thumbnail:hover .name {
   font-size: 2vmin;
-  transform: translate(0, 7vw);
+  transform: translate(0, 5vw);
 }
 
 #dead_man {
@@ -342,6 +345,11 @@ ul#wanted-select li a {
   margin: 2vmin;
 }
 
+/**
+*
+* footer
+*
+**/
 footer a {
   color: white;
   font-family: aniron;

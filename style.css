@@ -40,8 +40,8 @@
 h2 {
   font-family: aniron;
   font-size: 3vmin;
-  padding-top: 0;
-  padding-left: 3vw;
+  padding: 1vw 3vw;
+  margin: 0;
 }
 
 h3 {
@@ -58,6 +58,11 @@ h2::before, h2::after {
 
 .navbar, footer {
   background-color: #F7530D;
+}
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
 }
 
 /** background and font colors **/
@@ -104,13 +109,20 @@ h2 small {
 hr {
   background-color: #F7530D;
   color: #F7530D;
-  height: 1em;
+  height: 3px;
   width: 50%;
   margin: auto;
+  transform: skewX(-20deg);
 }
 
 /** button **/
+.btn {
+transform: skewX(-20deg);
+}
 
+.btn-lg {
+  margin: 1vw 0;
+}
 /**
  *
  * 	Navbar
@@ -152,6 +164,9 @@ hr {
   top: 50%;
 }
 
+#banner, #banner .carousel-inner {
+  margin: 0;
+}
 .carousel-caption h3, .carousel-caption p {
   font-family: partybusiness;
 }
@@ -331,6 +346,24 @@ ul#wanted-select li a {
 
 /**
 *
+* About the Ring
+*
+*/
+
+q {
+  font-size: 5vmin;
+}
+
+#citation-auteur::before {
+  content: " - ";
+}
+
+#citation-auteur {
+  color: grey;
+  font-size: 3vmin;
+}
+/**
+*
 * Contact Us
 *
 **/
@@ -338,6 +371,8 @@ ul#wanted-select li a {
 #map {
   width-max: 777px;
   height-max: 606px;
+  margin: 0.5vw;
+  display: block;
 
 }
 

@@ -35,7 +35,7 @@
 
 h2 {
   margin: 0;
-  padding: 2% 0 2% 2%;
+  padding: 2%;
   font-family: aniron;
   font-size: 3vmin;
 }
@@ -50,7 +50,8 @@ h2::before, h2::after {
   content: "ij";
   color: #F7530D;
   font-family: symbol;
-  top: 2%;
+  padding: 2% 0 2% 2%;
+  position: relative;
 }
 
 .navbar, footer {
@@ -73,6 +74,9 @@ h2::before, h2::after {
   background-repeat: repeat;
 }
 
+u {
+  color: black;
+}
 /** specific colors **/
 
 .panel-heading {
@@ -251,6 +255,7 @@ ul#wanted-select li a {
   background-color: white;
   border-radius: 5px;
   opacity: 0.5;
+  box-shadow: inset 5 5px 5px white;
 }
 
 /** set the name of the wanted man **/
@@ -310,7 +315,27 @@ ul#wanted-select li a {
  *
  *
  **/
+ .media-body h3 {
+   color: #F7530D;
+   font-family: partybusiness;
+   font-size: 4vmin;
+ }
+
+ .media-body p, .media-body u {
+   font-size: 3vmin;
+ }
+
+/**
+*
+* Contact Us
+*
+**/
+.form-group {
+  margin: 2vmin;
+}
 
 footer a {
   color: white;
+  font-family: aniron;
+  font-size: 2vmin;
 }

@@ -28,7 +28,7 @@
 
 * {
   font-family: partybusiness;
-  font-size: 3vmin;
+  font-size: 2.5vmin;
   max-width: 1920px;
   margin: auto;
 }
@@ -76,6 +76,7 @@ h2::before, h2::after {
 
 u {
   color: black;
+  font-size: 1.5vmin;
 }
 /** specific colors **/
 
@@ -163,19 +164,26 @@ hr {
 }
 
 .carousel-caption h3 {
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .carousel-caption p {
+  display: inline;
   font-size: 3vw;
 }
 
 .initiales {
+  padding-left: 8vmin;
   text-align: right;
 }
 
 .initiales::before {
   content: " - ";
+}
+
+.slider-control {
+  font-family: aniron;
+  font-size: 25vw;
 }
 
 /**

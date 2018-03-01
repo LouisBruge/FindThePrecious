@@ -33,15 +33,18 @@
   margin: auto;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 h2 {
-  margin: 0;
-  padding: 2%;
   font-family: aniron;
   font-size: 3vmin;
+  padding-top: 0;
+  padding-left: 3vw;
 }
 
 h3 {
-  margin: 0;
   font-family: aniron;
   font-size: 1vw;
 }
@@ -50,7 +53,6 @@ h2::before, h2::after {
   content: "ij";
   color: #F7530D;
   font-family: symbol;
-  padding: 2% 0 2% 2%;
   position: relative;
 }
 
@@ -109,6 +111,7 @@ hr {
 .btn {
   box-shadow: 2px 2px 3px;
   box-radius: 0px;
+  margin: 2vmin;
 }
 
 /**
@@ -116,16 +119,15 @@ hr {
  * 	Navbar
  *
  **/
+ .navbar {
+   margin: 0 0 0 0;
+   padding: 0.5vw 20px;
+   border: 0;
+ }
 
-/** remove margin and border from navbar **/
-
-.navbar {
-  margin: 0 0 0 0;
-  padding: 0 0 5px 5px;
-  border: 0;
+.navbar-header {
+  margin: 0;
 }
-
-/** modified button of the navbar **/
 
 #menu .active a {
   background: none;
@@ -138,19 +140,13 @@ hr {
   font-size: 1vw;
 }
 
-/** remove padding from container-fluid **/
-
-.container-fluid {
-  padding: 0;
-}
-
 /**
  *
  * 	Carousel
  *
  **/
 
-.item img {
+#slider .item img {
   margin: 0;
 }
 
@@ -257,7 +253,7 @@ ul#wanted-select li a {
   width: 20vmin;
 
   top: 15%;
-  margin: 0 25%;
+  margin: 0 20%;
   font-size: 3vmin;
 }
 
@@ -341,8 +337,11 @@ ul#wanted-select li a {
 * Contact Us
 *
 **/
-.form-group {
-  margin: 2vmin;
+
+#map {
+  width-max: 777px;
+  height-max: 606px;
+
 }
 
 /**

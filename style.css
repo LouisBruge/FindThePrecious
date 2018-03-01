@@ -104,6 +104,9 @@ h2 small {
   margin: 0;
 }
 
+.ml-10 {
+  margin-left: 3vmin;
+}
 /** color and weight of the horizontale rule **/
 
 hr {
@@ -118,10 +121,19 @@ hr {
 /** button **/
 .btn {
 transform: skewX(-20deg);
+border-radius: none;
 }
 
 .btn-lg {
   margin: 1vw 0;
+}
+
+.btn-white {
+  background-color: white;
+}
+
+.btn-black {
+  background-color: black;
 }
 /**
  *
@@ -178,10 +190,11 @@ transform: skewX(-20deg);
 .carousel-caption p {
   display: inline;
   font-size: 3vw;
+  text-align: left
 }
 
 .initiales {
-  padding-left: 15px;
+  padding-left: 10vmin;
   text-align: right;
 }
 

@@ -34,7 +34,7 @@
 }
 
 .container-fluid {
-  padding: 0;
+  margin: none;
 }
 
 h2 {
@@ -95,24 +95,21 @@ h2 small {
   color: black;
 }
 
+.row {
+  margin: 0;
+}
+
 /** color and weight of the horizontale rule **/
 
 hr {
   background-color: #F7530D;
   color: #F7530D;
-  height: 0.2vw;
+  height: 1em;
   width: 50%;
-  margin: 0 auto;
-  padding: 0;
+  margin: auto;
 }
 
 /** button **/
-
-.btn {
-  box-shadow: 2px 2px 3px;
-  box-radius: 0px;
-  margin: 2vmin;
-}
 
 /**
  *
@@ -169,7 +166,7 @@ hr {
 }
 
 .initiales {
-  padding-left: 8vmin;
+  padding-left: 15px;
   text-align: right;
 }
 
